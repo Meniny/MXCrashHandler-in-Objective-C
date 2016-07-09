@@ -17,7 +17,7 @@ Add the code blew to `AppDelegate.m`:
 ```
 
 ```
-@interface MXClass: UIViewController <MXCrashHandlerDelegate>
+@interface AppDelegate () <MXCrashHandlerDelegate>
 ```
 
 ```
