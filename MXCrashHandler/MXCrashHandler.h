@@ -13,7 +13,7 @@
 #import <UIKit/UIKit.h>
 
 @class MXCrashHandler;
-@protocol CrashHandlerDelegate <NSObject>
+@protocol MXCrashHandlerDelegate <NSObject>
 @required
 //- (void)crashHandler:(CrashHandler *)handler sendEmail:(NSString *)body;
 /**
@@ -30,7 +30,7 @@
  * @property
  * @brief 代理，拦截到异常和信号都代理方法中处理
  */
-@property (nonatomic, strong) id<CrashHandlerDelegate> delegate;
+@property (nonatomic, strong) id<MXCrashHandlerDelegate> delegate;
 /**
  * @method
  * @brief 单利

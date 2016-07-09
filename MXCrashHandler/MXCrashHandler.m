@@ -13,6 +13,8 @@
 #include <libkern/OSAtomic.h>
 #include <execinfo.h>
 
+#define NSStringFromRawValue(v) @#v
+
 //#define atCANCEL NSLocalizedString(@"Cancel", nil)
 //#define atTERMINATE NSLocalizedString(@"Terminate", nil)
 //#define atIGNORE NSLocalizedString(@"Ignore", nil)
@@ -247,7 +249,7 @@ void SignalHandler(int signal);
     
     NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
     
-    [userInfo setObject:NSStringFromAnyRawValue(MXAssertLanguageTypeObjectiveC) forKey:CrashHandlerAssertLanguageKey];
+    [userInfo setObject:NSStringFromRawValue(MXAssertLanguageTypeObjectiveC) forKey:CrashHandlerAssertLanguageKey];
     if (language == MXAssertLanguageTypeObjectiveC) {
         [userInfo setObject:NSStringFromSelector(selector) forKey:CrashHandlerAssertOCMethodKey];
         [userInfo setObject:[NSString stringWithFormat:@"%@", object] forKey:CrashHandlerAssertOCObjectKey];

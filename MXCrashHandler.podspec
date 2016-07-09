@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MXCrashHandler"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "An easy-to-use class to handle crash on iOS."
 
   # This description is used to generate tags and improve search results.

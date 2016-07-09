@@ -5,10 +5,12 @@
 ## Installation with CocoaPods
 
 ```
-pod 'MXCrashHandler'
+pod 'MXCrashHandler', '~>1.0.1'
 ```
 
 ## Usage
+
+Add the code blew to `AppDelegate.m`:
 
 ```
 #import "MXCrashHandler.h"
@@ -19,8 +21,8 @@ pod 'MXCrashHandler'
 ```
 
 ```
-[MXCrashHandler install];
-[MXCrashHandler setDelegate:self];
+[MXCrashHandler installWithThread:[NSThread currentThread]];
+[[MXCrashHandler sharedHandler] setDelegate:self];
 ```
 
 ```
