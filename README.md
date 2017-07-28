@@ -5,7 +5,7 @@
 ## Installation with CocoaPods
 
 ```
-pod 'MXCrashHandler', '~>1.0.1'
+pod 'MXCrashHandler'
 ```
 
 ## Usage
