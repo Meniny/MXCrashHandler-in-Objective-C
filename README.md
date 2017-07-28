@@ -31,6 +31,6 @@ Add the code blew to `AppDelegate.m`:
 }
 ```
 
-## Objective-C Version
+## Swift Version
 
 See [OhCrap](https://github.com/Meniny/OhCrap)
