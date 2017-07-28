@@ -30,3 +30,7 @@ Add the code blew to `AppDelegate.m`:
   NSLog(@"%@", exception);
 }
 ```
+
+## Objective-C Version
+
+See [OhCrap](https://github.com/Meniny/OhCrap)
